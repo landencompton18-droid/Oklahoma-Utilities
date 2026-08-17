@@ -143,10 +143,10 @@ description:
 "Welcome to the server support. You can utilize this channel to contact the support team for any inquiry you may have.\n\n" +
 "**When you press Contact Support, ensure you provide us with a detailed response regarding your issue. If you provide us with an extremely vague inquiry, there's a lower chance of our team being able to efficiently assist you in a timely manner.**\n\n" +
 "**Ensure you read the Frequently Asked Questions (FAQs) before creating a ticket.**",
-color: getColor('info')
+     color: getColor('info')
 });
-            .setThumbnail("https://cdn.discordapp.com/attachments/1526825292998639697/1538790646142468106/74f85ed2-3741-4748-bb0e-a3221f276410.png?ex=6a83f5f7&is=6a82a477&hm=16e2f6eb48b33da2c08a80b3a04fd5bcc750df888a05df6f4eed28e2b7fbae1c&")
-            .setImage("https://cdn.discordapp.com/attachments/1526825292998639697/1538790670951784458/abdabfb3-858c-4cdc-b9a0-84ffc6ed092b.png?ex=6a83f5fd&is=6a82a47d&hm=0d5a55422ff3da9dc23afebbeb7bcc960a9a185a013ab1a38876e71c6256ab65&")
+     .setThumbnail("https://cdn.discordapp.com/attachments/1526825292998639697/1538790646142468106/74f85ed2-3741-4748-bb0e-a3221f276410.png?ex=6a83f5f7&is=6a82a477&hm=16e2f6eb48b33da2c08a80b3a04fd5bcc750df888a05df6f4eed28e2b7fbae1c&")
+     .setImage("https://cdn.discordapp.com/attachments/1526825292998639697/1538790670951784458/abdabfb3-858c-4cdc-b9a0-84ffc6ed092b.png?ex=6a83f5fd&is=6a82a47d&hm=0d5a55422ff3da9dc23afebbeb7bcc960a9a185a013ab1a38876e71c6256ab65&")
 
             const ticketButton = new ActionRowBuilder().addComponents(
 new ButtonBuilder()
