@@ -136,19 +136,23 @@ const panelMessage = interaction.options.getString("panel_message") || "Click th
             const maxTicketsPerUser = interaction.options.getInteger("max_tickets_per_user") || 3;
 const dmOnClose = interaction.options.getBoolean("dm_on_close") !== false;
 
-            const setupEmbed = createEmbed({ 
-                title: "Support Tickets", 
-description: panelMessage,
-                color: getColor('info')
-            });
+            onst setupEmbed = createEmbed({
+title: "Support",
+description:
+"**Support**\n" +
+"Welcome to the server support. You can utilize this channel to contact the support team for any inquiry you may have.\n\n" +
+"**When you press Contact Support, ensure you provide us with a detailed response regarding your issue. If you provide us with an extremely vague inquiry, there's a lower chance of our team being able to efficiently assist you in a timely manner.**\n\n" +
+"**Ensure you read the Frequently Asked Questions (FAQs) before creating a ticket.**",
+color: getColor('info')
+});
 
             const ticketButton = new ActionRowBuilder().addComponents(
-                new ButtonBuilder()
-                    .setCustomId("create_ticket")
-.setLabel(buttonLabel)
-                    .setStyle(ButtonStyle.Primary)
-                    .setEmoji("📩"),
-            );
+new ButtonBuilder()
+.setCustomId("create_ticket")
+.setLabel("Contact Support")
+.setStyle(ButtonStyle.Primary)
+.setEmoji("🎫"),
+);
 
             try {
                 const sentPanel = await panelChannel.send({
